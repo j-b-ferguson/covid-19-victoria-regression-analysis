@@ -24,7 +24,7 @@ library(forecast)
 library(ggResidpanel)
 ```
 
-<h2>Read Data</h2>
+<h2><p align=center>Read Data</p></h2>
 
 ```r
 url <- 'https://raw.githubusercontent.com/j-b-ferguson/covid-19-australia-preprocessing/main/Cleaned%20Data%20after%20Preprocessing/covid19_Australia_data_cleaned.csv'
