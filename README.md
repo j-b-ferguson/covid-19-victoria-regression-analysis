@@ -1,6 +1,6 @@
 <h1><p align="center">COVID-19 Australian Data Linear Regression\n<h2>Creating and Testing a Simple Predictive Model</h2></p></h1>
 
-<h2 class="card-subheading">Subheading</h2>
+<h2 class="card-heading">Subheading</h2>
 <h3 class="card-heading">Heading</h3>
 
 <p align="center"><b>Author</b></p>
