@@ -55,8 +55,7 @@ df.vic <- df %>% filter(State == 'VIC')
 
 ```r
 # Filter out observations with zero values
-df.vic <- df.vic %>% 
-            filter(DailyCases != 0, SvnDayCaseAvg != 0, FrtnDayCaseAvg != 0)
+df.vic <- df.vic %>% filter(DailyCases != 0, SvnDayCaseAvg != 0, FrtnDayCaseAvg != 0)
 ```
 
 ```r
