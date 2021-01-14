@@ -32,3 +32,55 @@ df <- read_csv(url)
 ```
 
 <h2><p align=center>Preprocessing</p></h2>
+
+```r
+# Rename to simple column names
+colnames(df) <- c('State', 'Date', 
+                  'CumulativeCases', 'CumulativeTests', 
+                  'DailyCases', 'DailyTests', 
+                  'SvnDayCaseAvg', 'FrtnDayCaseAvg', 
+                  'SvnDayTestAvg', 'FrtnDayTestAvg')                  
+```
+
+```r
+# Convert data type
+df$State <- df$State %>% as.factor()
+str(df)
+```
+
+```r
+# Consider just Victorian COVID-19 cases
+df.vic <- df %>% filter(State == 'VIC')
+```
+
+```r
+# Filter out observations with zero values
+df.vic <- df.vic %>% 
+            filter(DailyCases != 0, SvnDayCaseAvg != 0, FrtnDayCaseAvg != 0)
+```
+
+```r
+# Create new column and fill with missing values
+df.vic$NextDayCases <- NA
+```
+
+```r
+# Define values in NextDayCases column as DailyCases[i+1] (the day after)
+for (i in 1:nrow(df.vic)) {
+  if (i < nrow(df.vic)) {
+    df.vic$NextDayCases[i] <- df.vic$DailyCases[i+1]
+  } else {
+    df.vic$NextDayCases[i] <- NA
+  }
+}
+```
+
+```r
+# Keep only complete observations
+df.vic <- df.vic[complete.cases(df.vic),]
+```
+
+```r
+# Now remove the date column as it is an invalid type for the regression task
+df.vic <- df.vic %>% select(-Date)
+```
