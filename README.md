@@ -1,6 +1,6 @@
 <h1 style="font-weight:300;">
   <p align="center">COVID-19 Australian Data Linear Regression</p>
-  <p align="center" style="font-weight:300;">A Simple Predictive Model</p>
+  <p align="center"><i>A Simple Predictive Model</i></p>
 </h1>
 
 <h2 class="card-heading">Subheading</h2>
