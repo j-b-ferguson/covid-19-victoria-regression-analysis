@@ -1,4 +1,4 @@
-<h1>
+<h1 style="font-weight:300;">
   <p align="center">COVID-19 Australian Data Linear Regression</p>
   <p align="center" style="font-weight:300;">A Simple Predictive Model</p>
 </h1>
