@@ -45,7 +45,6 @@ colnames(df) <- c('State', 'Date',
 ```r
 # Convert data type
 df$State <- df$State %>% as.factor()
-str(df)
 ```
 
 ```r
@@ -83,3 +82,10 @@ df.vic <- df.vic[complete.cases(df.vic),]
 # Now remove the date column as it is an invalid type for the regression task
 df.vic <- df.vic %>% select(-Date)
 ```
+
+```r
+# Show data frame
+str(df.vic)
+```
+
+
