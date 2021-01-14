@@ -1,4 +1,5 @@
-<h1><p align="center">COVID-19 Australian Data Linear Regression\n<h2>Creating and Testing a Simple Predictive Model</h2></p></h1>
+<h1><p align="center">COVID-19 Australian Data Linear Regression></h1>
+<h3><p align="center">Creating and Testing a Simple Predictive Model</p></h3>
 
 <h2 class="card-heading">Subheading</h2>
 <h3 class="card-heading">Heading</h3>
@@ -9,7 +10,3 @@
 <a href="mailto:justin.benjamin.ferguson@gmail.com?subject=GitHub%20Enquiry"><p align="center">Contact</p></a>
 
 <h2><p align=center>Executive Summary</h2>
-
-
-# test
-## assa
