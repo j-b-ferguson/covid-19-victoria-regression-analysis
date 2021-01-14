@@ -1,7 +1,5 @@
----
----
-<h1><p align="center">COVID-19 Australian Data Linear Regression</h1>
-<h2><p align="center">Creating and Testing a Simple Predictive Model</h2>
+<h1><p align="center">COVID-19 Australian Data Linear Regression</p</h1>
+  <h2><p align="center">Creating and Testing a Simple Predictive Model</p></h2>
 
 <p align="center"><b>Author</b></p>
 <a href="https://github.com/j-b-ferguson"><p align="center">Justin Ferguson GitHub</p></a>
