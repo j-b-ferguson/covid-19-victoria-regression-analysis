@@ -1,5 +1,5 @@
 <h1>
-  <p align="center">A Simple Predictive Model of COVID-19 Australian Cases using Ordinary Least Squares Linear Regression</p>
+  <p align="center">A Predictive Model to Forecast Australian COVID-19 Cases using Ordinary Least Squares Linear Regression</p>
 </h1>
 
 <p align="center"><b>Author</b></p>
