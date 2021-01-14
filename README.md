@@ -1,4 +1,7 @@
-<h1><p align="center">COVID-19 Australian Data Linear Regression</p><br><p align="center" style="font-weight: 400;">A Simple Predictive Model</p></h1>
+<h1>
+  <p align="center">COVID-19 Australian Data Linear Regression</p>
+  <p align="center" style="font-weight:300;">A Simple Predictive Model</p>
+</h1>
 
 <h2 class="card-heading">Subheading</h2>
 <h3 class="card-heading">Heading</h3>
