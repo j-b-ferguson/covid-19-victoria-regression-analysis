@@ -440,9 +440,9 @@ predictors of <i>p</i> > 0.05; these predictors are less likely to contribute me
 to the linear model. The result is a model with improved accuracy and performance; as well as a reduction in 
 overfitting.
 
-<p class="border-p">
+
 __*Starting Features:*__ ```DailyCasesx```, ```SvnDayCaseAvgx```, ```FrtnDayCaseAvgx```, ```SvnDayTestAvgx```, ```FrtnDayTestAvgx```
-</p>
+
 
 
 ```r
