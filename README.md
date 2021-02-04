@@ -1,5 +1,5 @@
 <h1>
-  <p align="center">A Predictive Model to Forecast Victorian COVID-19 Cases</p>
+A Predictive Model to Forecast Victorian COVID-19 Cases
 </h1>
 
 <p><b>Author</b></p>
