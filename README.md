@@ -201,18 +201,18 @@ The OLS linear regression model assumptions must now be defined before
 continuing further.
 
 <p class="border-p">
-***1. Linearity:*** There is a linear relationship between the
+__*1. Linearity:*__ There is a linear relationship between the
 independent variable, x, and the dependent variable, y. 
 <br><br> 
-***2.Independence:*** Variables are independent of each other as to not be
+__*2.Independence:*__ Variables are independent of each other as to not be
 derived from the same source. Or for time series data, correlation
 between time-shifted copies of variables is not present - known as
 autocorrelation. 
 <br><br> 
-***3. Homoscedasticity:*** The residuals haveconstant variance for any 
+__*3. Homoscedasticity:*__ The residuals haveconstant variance for any 
 value of x. 
 <br><br> 
-***4. Normality:*** The residuals are normally distributed.
+__*4. Normality:*__ The residuals are normally distributed.
 </p>
 
 On the basis of assumption 2, a simple linear regression model from the
@@ -244,7 +244,7 @@ durbinWatsonTest(simplemodel)
 ##  Alternative hypothesis: rho != 0
 ```
 
-At the significance level $\alpha$ = 0.05, $p$ \< 0.05 in the
+At the significance level &alpha; = 0.05, <i>p</i> < 0.05 in the
 Durbin-Watson test; and so the null hypothesis is rejected, thus
 confirming a statistically significant autocorrelation in this simple
 linear model. Further, the corresponding bivariate relationships
@@ -343,19 +343,19 @@ residuals
 
 ![Figure 2: Diagnostic plots to test the linear regression model assumptions.](/plots/residpanel.svg)
 
-***Linearity:*** The model *does not* satisfy the requirement of
+__*Linearity:*__ The model *does not* satisfy the requirement of
 linearity as the LOESS lines in the residual and location-scale plots
 are not horizontal.
 
-***Independence:*** The requirement for independence has been satisfied
+__*Independence:*__ The requirement for independence has been satisfied
 as the model now contains multiple predictors and does not
 autocorrelate.
 
-***Homoscedasticity:*** The non-constant variance observed in the
+__*Homoscedasticity:*__ The non-constant variance observed in the
 residual and location-scale plots shows the requirement of
 homoscedasticity has been violated.
 
-***Normality:*** The requirement of normality of residuals has been
+__*Normality:*__ The requirement of normality of residuals has been
 violated as there are many data points that diverge outside of the 95%
 confidence interval bands in the Q-Q plot.
 
@@ -436,7 +436,7 @@ resid_panel(linearmodelx, "R", smoother = TRUE, qqbands = TRUE, theme = "gray")
 
 With the linear regression assumptions all satisfied, a more advanced form of feature selection can now be 
 used on the transformed model. Backwards elimination is a technique used to sequentially remove 
-predictors of <i>p</i> \> 0.05; these predictors are less likely to contribute meaningfully 
+predictors of <i>p</i> > 0.05; these predictors are less likely to contribute meaningfully 
 to the linear model. The result is a model with improved accuracy and performance; as well as a reduction in 
 overfitting.
 
@@ -472,9 +472,9 @@ Table 4: Backward elimination step one.
 |SvnDayTestAvgx  |                 0.37|
 |FrtnDayTestAvgx |                 0.65|
 
-<p class="border-p">
+
 __*Predictor selected for elimination:*__ ```FrtnDayTestAvgx```
-</p>
+
 
 
 ```r
@@ -502,9 +502,9 @@ Table 5: Backward elimination step two.
 |FrtnDayCaseAvgx |                 0.00|
 |SvnDayTestAvgx  |                 0.08|
 
-<p class="border-p">
+
 __*Predictor selected for elimination:*__ ```DailyCasesx```
-</p>
+
 
 
 ```r
@@ -531,9 +531,9 @@ Table 6: Backward elimination step three.
 |FrtnDayCaseAvgx |                 0.00|
 |SvnDayTestAvgx  |                 0.05|
 
-<p class="border-p">
+
 __*Optimal features:*__ ```SvnDayCaseAvgx```, ```FrtnDayCaseAvgx```, ```SvnDayTestAvgx```
-</p>
+
 
 So, we can now modify the ```df.vicx``` table to include only the optimal features in 
 model fitment.
@@ -671,7 +671,7 @@ test.set <- df.vicx.optimal[setdiff(1:n, train.set),]
 model.optimal <- train(lrn, cases.taskx, train.set)
 ```
 
-In the table below are the Boxcox transformed predictions, 95\% upper and lower prediction bounds, and true values of the fitted model.
+In the table below are the Boxcox transformed predictions, 95% upper and lower prediction bounds, and true values of the fitted model.
 
 
 ```r
