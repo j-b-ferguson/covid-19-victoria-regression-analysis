@@ -201,18 +201,18 @@ The OLS linear regression model assumptions must now be defined before
 continuing further.
 
 <p class="border-p">
-__*1. Linearity:*__ There is a linear relationship between the
+<b><i>1. Linearity:</b></i> There is a linear relationship between the
 independent variable, x, and the dependent variable, y. 
 <br><br> 
-__*2.Independence:*__ Variables are independent of each other as to not be
+<b><i>2.Independence:</b></i> Variables are independent of each other as to not be
 derived from the same source. Or for time series data, correlation
 between time-shifted copies of variables is not present - known as
 autocorrelation. 
 <br><br> 
-__*3. Homoscedasticity:*__ The residuals haveconstant variance for any 
+<b><i>3. Homoscedasticity:</b></i> The residuals haveconstant variance for any 
 value of x. 
 <br><br> 
-__*4. Normality:*__ The residuals are normally distributed.
+<b><i>4. Normality:</b></i> The residuals are normally distributed.
 </p>
 
 On the basis of assumption 2, a simple linear regression model from the
@@ -226,9 +226,9 @@ autocorrelation from the `car` package.
 
 
 <p class="border-p">
-__*<i>H<sub>0</sub></i> (null hypothesis):*__ There is no correlation among residuals.
+<b><i>H<sub>0</sub> (null hypothesis):</b></i> There is no correlation among residuals.
 <br>
-__*<i>H<sub>A</sub></i> (alternative hypothesis):*__ There is autocorrelation.
+<b><i>H<sub>A</sub> (alternative hypothesis):</b></i> There is autocorrelation.
 </p>
 
 
