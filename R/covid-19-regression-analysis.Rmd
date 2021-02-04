@@ -1,6 +1,6 @@
 ---
 title: "A Predictive Model to Forecast Victorian COVID-19 Cases"
-author: "Justin Ferguson"
+author: <a href="https://www.justinferguson.me">Justin Ferguson</a>
 date: "2020-01-29"
 output:
   rmdformats::downcute:
