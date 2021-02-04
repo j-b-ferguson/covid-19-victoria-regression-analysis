@@ -341,7 +341,7 @@ residuals <- resid_panel(linearmodel, plots = "R", smoother = TRUE, qqbands = TR
 residuals
 ```
 
-![Figure 2: Diagnostic plots to test the linear regression model assumptions.](xx_files/figure-html/unnamed-chunk-9-1.png)
+![Figure 2: Diagnostic plots to test the linear regression model assumptions.](/plots/residpanel.svg)
 
 ***Linearity:*** The model *does not* satisfy the requirement of
 linearity as the LOESS lines in the residual and location-scale plots
@@ -430,7 +430,7 @@ linearmodelx <- lm(NextDayCasesx ~ DailyCasesx + SvnDayCaseAvgx + FrtnDayCaseAvg
 resid_panel(linearmodelx, "R", smoother = TRUE, qqbands = TRUE, theme = "gray")
 ```
 
-![Figure 3: Diagnostic plots to test the transformed linear regression model assumptions.](xx_files/figure-html/unnamed-chunk-12-1.png)
+![Figure 3: Diagnostic plots to test the transformed linear regression model assumptions.](/plots/residpanelX.svg)
 
 ## Dimension Reduction 2
 
@@ -761,7 +761,7 @@ title <- ggdraw() + draw_label("The Transformed Linear Regression Model and Mapp
 plot_grid(title, plt, ncol=1, rel_heights=c(0.1, 1))
 ```
 
-![Figure 4: The transformed linear regression model and mapping between Boxcox transformed values and true values.](xx_files/figure-html/unnamed-chunk-23-1.png)
+![Figure 4: The transformed linear regression model and mapping between Boxcox transformed values and true values.](/plots/regression_mapping.svg)
 
 A further analysis of this limitation requires the average 95% prediction width of the model; this is given in the output below. Table 9 below shows uses arbitrary Boxcox prediction values - ranging from 1 to 10 - and the average prediction width to formulate Boxcox prediction intervals. These values and intervals are mapped to into the true values, thus revealing the exponentially increasing true prediction width.
 
