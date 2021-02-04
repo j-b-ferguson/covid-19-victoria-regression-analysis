@@ -193,7 +193,7 @@ plt.grid.title <- plot_grid(title, plt.grid, ncol=1, rel_heights=c(0.1, 1))
 plt.grid.title
 ```
 
-![Figure 1: The bivariate relationships between the "NextDayCases" Variable and the potential model predictors.](xx_files/figure-html/unnamed-chunk-4-1.png)
+![Figure 1: The bivariate relationships between the "NextDayCases" Variable and the potential model predictors.](/plots/plt.grid.title.svg)
 
 # Model Assumptions
 
